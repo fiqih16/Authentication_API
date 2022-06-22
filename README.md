@@ -1,2 +1,2 @@
 # RUN SERVER
-### nodemon index
+### Open cmd: nodemon index
