@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJGaXFpaCIsImVtYWlsIjoiZmlxaWgxNjY2QGdtYWlsLmNvbSIsImlhdCI6MTY1NTkwOTAwMywiZXhwIjoxNjU1OTA5MDIzfQ.WBDE4sOh-WgFvHiA5dcE6wLIbLGQZsTI2CHncAtDGVA
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Fiqih",
+    "email": "fiqih1666@gmail.com",
+    "password": "useradmin",
+    "confPassword": "useradmin"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "fiqih1666@gmail.com",
+    "password": "useradmin"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
